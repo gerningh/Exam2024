@@ -7,7 +7,7 @@
     <link href="Ikoner/css/brands.css" rel="stylesheet"/>
     <link href="Ikoner/css/solid.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/Style.css" >
-    <title>Document</title>
+    <title>Kasse</title>
 </head>
 <body>
     <header>
@@ -18,7 +18,7 @@
                     <a href="index.html">Hjem</a>
                 </li>
                 <li>
-                    <a href="*">Produkter</a>
+                    <a href="product.html">Produkter</a>
                 </li>
                 <li>
                     <a href="*">Kategorier</a>
@@ -30,9 +30,95 @@
                     <a href="index.html">Logo</a>
                 </li>
             </ul>
+            <form>
+                <label for="search">Søk</label>
+                <input type="search" placeholder="her kan du søke etter produkter..." id="search">
+                <input type="submit" value="søk">
+            </form>
         </nav>
     </header>
-    
+    <aside>
+        <h2>Kasse</h2>
+    </aside>
+    <section>
+        <h2>1. SHOPPINGBAGEN DIN</h2>
+        <article>
+            <source media="(min-width:400px)" srcset="https://picsum.photos/200/300">
+            <source media="(max-width:400px)" srcset="https://picsum.photos/200/300">
+            <img src="https://picsum.photos/200/300" alt="beste Produkter">
+            <section>
+                <p>beste Produkter</p>
+                <p>Kr 1999</p>
+                <p>farge rainbue</p>
+                <label>Størrelse:
+                    <select>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                    </select>
+                </label>
+                <label>Antall:
+                    <input type="number" value="1" min="1">
+                </label>
+            </section>
+            <section>
+                <button><i class="fa-regular fa-heart"></i></button>
+                <button><i class="fa-solid fa-trash"></i></button>
+            </section>
+        </article>
+    </section>
+
+    <section>
+        <h2>2. DINE OPPLYSNINGER</h2>
+        <form>
+            <input type="text" placeholder="Fornavn" required>
+            <input type="text" placeholder="Etternavn" required>
+            <input type="text" placeholder="Gatenavn" required>
+            <input type="number" placeholder="Postnummer" required>
+            <input type="text" placeholder="Poststed" required>
+            <input type="email" placeholder="E-post" required>
+            <input type="tel" placeholder="Telefon" required>
+            <button type="submit">Lagre</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>3. LEVERING</h2>
+        <section>
+            <label>
+                <input type="radio" name="delivery" checked>
+                Express Hjemlevering (3-4 Virkedager) - 59 kr
+            </label>
+            <label>
+                <input type="radio" name="delivery">
+                Express Pakke til utleveringssted (1-3 Virkedager) - 59 kr
+            </label>
+            <label>
+                <input type="radio" name="delivery">
+                Standard Hjemlevering (5-8 Virkedager) - Gratis
+            </label>
+        </section>
+    </section>
+
+    <section>
+        <h2>4. BETALING</h2>
+        <form>
+            <input type="number" placeholder="Kortnummer" required>
+            <input type="nu" placeholder="Utløpsdato" required>
+            <input type="text" placeholder="CVC/CVV" required>
+            <p>Å betale kort</p>
+            <button type="submit">Fullfør kjøp</button>
+            <label>
+                <input type="checkbox">
+                Ja takk! Send nyhetsbrev til meg.
+            </label>
+            <label>
+                <input type="checkbox">
+                Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+            </label>
+        </form>
+    </section>
+
     <footer>
         <p>Logo</p>
         <p>Adresse</p>
