@@ -10,18 +10,18 @@
     <title>Kasse</title>
 </head>
 <body>
-    <header>
+    <header id="global-header">
         <a href="index.html"></a>
-        <nav>
-            <ul>
+        <nav class="flex-space-b">
+            <ul class="flex-menu">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="product.html">Produkter</a></li>
-                <li><a href="index.html">Kategorier</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#footer">Kontakt</a></li>
                 <li><a href="index.html">Logo</a></li>
                 <li><a class="fa-solid fa-cart-shopping" href="checkout.html"></a></li>
             </ul>
-            <form>
+            <form class="flex-space-b">
                 <label for="search">Søk</label>
                 <input type="search" placeholder="her kan du søke etter produkter..." id="search">
                 <input type="submit" value="søk">
@@ -62,13 +62,13 @@
     <section>
         <h2>2. DINE OPPLYSNINGER</h2>
         <form>
-            <input type="text" placeholder="Fornavn" required>
-            <input type="text" placeholder="Etternavn" required>
-            <input type="text" placeholder="Gatenavn" required>
-            <input type="number" placeholder="Postnummer" required>
-            <input type="text" placeholder="Poststed" required>
-            <input type="email" placeholder="E-post" required>
-            <input type="tel" placeholder="Telefon" required>
+            <input type="text" name="Fornavn" placeholder="Fornavn" id="name" required>
+            <input type="text" name="Etternavn" placeholder="Etternavn" id="name" required>
+            <input type="text" name="Gatenavn" placeholder="Gatenavn" required>
+            <input type="number" name="postnummer" placeholder="Postnummer" required>
+            <input type="text" name="PoststedS" placeholder="Poststed" required>
+            <input type="email" name="email" placeholder="Eksemple@email.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            <input type="tel" name="Telefon" placeholder="Telefon" pattern="[0-9]{8,12}" required>
             <button type="submit">Lagre</button>
         </form>
     </section>
@@ -95,8 +95,8 @@
         <h2>4. BETALING</h2>
         <form>
             <input type="number" placeholder="Kortnummer" required>
-            <input type="nu" placeholder="Utløpsdato" required>
-            <input type="text" placeholder="CVC/CVV" required>
+            <input type="number" placeholder="Utløpsdato" required>
+            <input type="number" placeholder="CVC/CVV" required>
             <p>Å betale kort</p>
             <button type="submit">Fullfør kjøp</button>
             <label>
@@ -110,13 +110,10 @@
         </form>
     </section>
 
-    <footer id="footer">
+    <footer>
         <p>Logo</p>
-        <p>Adresse</p>
+        <p>Adresse: B.R.A veien 4 1757 Halden</p>
         <p>Høgskolen i Østfold</p>
-        <p>B.R.A veien 4</p>
-        <p>NO-1757 Halden</p>
-        <p>Norway</p>
         <p>telefon: 42012739</p>
         <p>E-post: Sasuke@hiof.no</p>
             <ul>
