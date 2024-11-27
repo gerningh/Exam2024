@@ -4,56 +4,71 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#grid-container{
+#banner{
+    background-color: aqua;
+    display: flex;
+    justify-content: end;
+    flex-direction: column
+
+}
+
+.alone{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.something {
+    text-decoration: #000;
+    background-color: white;
+
+}
+
+.picfor {
+    width: 80%;
+    height: auto;
+
+}
+
+.thatone{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+header {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
-    row-gap: 2rem;
-}
-
-#global-header{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: 1 / 2;
-}
-
-.flex-space-b{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 1rem;
-}
-
-.flex-space-b h2{
-    width: 100%;
-
-}
-
-.flex-space-b form label{
-    visibility: hidden;
-    position: absolute;
-}
-
-.flex-menu {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    padding: 0;
+    padding: 1rem;
     margin: 0;
-    flex-wrap: wrap;
 
     a{
-        text-decoration: none;
+        text-decoration: dashed;
         color: #000;
     }
+}
+
+.links {
+    display: grid;
+    gap: 0.1cm;
+}
+
+.kategorier h3 {
+    display: grid;
+    border: 5px solid rgb(0, 0, 0);
+}
+
+.anmeldelser{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 10px;
+    max-width: 150px;
+    border: 5px solid rgb(0, 0, 0);
 }
 
 footer{
     background-color: #c3c3c3;
     display: grid;
-    align-content: end;
-    grid-template-columns: auto auto;
-    gap: 10px;
-    padding: 10px;
+    gap: 0.1cm;
 
 }
