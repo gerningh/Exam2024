@@ -5,7 +5,7 @@ body{
 }
 
 #banner{
-    background-color: aqua;
+    background-color: rgb(168, 168, 168);
     display: flex;
     justify-content: end;
     flex-direction: column
@@ -66,9 +66,46 @@ header {
     border: 5px solid rgb(0, 0, 0);
 }
 
+.bigpic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 800px;
+}
+
+.bigpic img{
+    width: 100%;
+    height: auto;
+}
+
+.bigpic .large{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.other img{
+    width: 100%;
+    height: auto;
+}
+
+.buy{
+    width: 100%;
+    display: grid;
+}
+
+.buywithspace{
+    width: 100%;
+    display: grid;
+    padding: 5px;
+    gap: 5px;
+}
+
+.line{
+    display: grid;
+}
+
 footer{
     background-color: #c3c3c3;
     display: grid;
     gap: 0.1cm;
-
 }
