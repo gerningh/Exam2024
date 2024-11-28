@@ -19,7 +19,8 @@ body{
 
 .something {
     text-decoration: #000;
-    background-color: white;
+    display: flex;
+    justify-content: flex-end;
 
 }
 
